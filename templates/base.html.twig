@@ -15,49 +15,16 @@
     </head>
     <body class="d-flex flex-column min-vh-100 justify-content-between">
 
-        <nav class="container-fluid">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <div class="col-md-3 mb-2 mb-md-0">
-                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-            </div>
-
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-primary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
-                <li><a href="#" class="nav-link px-2 text-secondary">Pricing</a></li>
-                <li><a href="#" class="nav-link px-2 text-secondary">FAQs</a></li>
-                <li><a href="#" class="nav-link px-2 text-secondary">About</a></li>
-            </ul>
-
-            <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-secondary me-2">Connexion</button>
-                <button type="button" class="btn btn-secondary">Inscription</button>
-            </div>
-            </header>
-        </nav>
+        {% include 'partials/header.html.twig' %}
 
         <div class="flex-grow-1">
 
-        {% block body %}
-        
-        
-        
-        {% endblock %}
+            {% block body %}
+            {% endblock %}
 
         </div>
 
-        <footer class="container-fluid py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-            </ul>
-            <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
-        </footer>
+        {% include 'partials/footer.html.twig' %}
 
 
     </body>
