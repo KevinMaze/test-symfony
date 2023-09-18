@@ -3,3 +3,9 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+
+# exemple ancienne route
+# page_contact:
+#     route: /contact
+#     controller: App
