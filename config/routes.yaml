@@ -8,4 +8,8 @@ controllers:
 # exemple ancienne route
 # page_contact:
 #     route: /contact
-#     controller: App
+#     controller: App\Controller\PagesController::contact
+
+# page_cgu:
+#     route: /cgu
+#     controller: App\Controller\PagesController::cgu
